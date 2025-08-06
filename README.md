@@ -45,6 +45,10 @@ You must use rmp-vast in a well-formed HTML document. This means a web-page with
 ```html
 <script src="./dist/rmp-vast.min.js">
 ```
+OR
+```js
+import RmpVast from 'rmp-vast';
+```
 
 - Then we must adhere to a specific HTML layout pattern. This pattern is as follows:
 
