@@ -1,8 +1,11 @@
 {
-  "name": "rmp-vast",
+  "name": "@pavloniym/rmp-vast",
   "version": "17.0.0",
   "author": "Radiant Media Player <support@radiantmediaplayer.com>",
   "description": "A client-side JavaScript solution to load, parse and display VAST resources (advertising)",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pavloniym/rmp-vast.git"
