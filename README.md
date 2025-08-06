@@ -47,7 +47,7 @@ You must use rmp-vast in a well-formed HTML document. This means a web-page with
 ```
 OR
 ```js
-import RmpVast from 'rmp-vast';
+import RmpVast from '@pavloniym/rmp-vast';
 ```
 
 - Then we must adhere to a specific HTML layout pattern. This pattern is as follows:

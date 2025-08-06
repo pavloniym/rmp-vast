@@ -1,6 +1,6 @@
 {
   "name": "@pavloniym/rmp-vast",
-  "version": "17.0.1-esm",
+  "version": "17.0.1-esm-v2",
   "author": "Radiant Media Player <support@radiantmediaplayer.com>",
   "description": "A client-side JavaScript solution to load, parse and display VAST resources (advertising)",
   "publishConfig": {
@@ -11,8 +11,12 @@
     "url": "git+https://github.com/pavloniym/rmp-vast.git"
   },
   "exports": {
-    "import": "./dist/rmp-vast.esm.js",
-    "require": "./dist/rmp-vast.js"
+    ".": {
+      "types": "./types/js/index.d.ts",
+      "import": "./dist/rmp-vast.esm.js",
+      "require": "./dist/rmp-vast.js",
+      "default": "./dist/rmp-vast.js"
+    }
   },
   "main": "./dist/rmp-vast.js",
   "module": "./dist/rmp-vast.esm.js",
