@@ -5,9 +5,14 @@
   "description": "A client-side JavaScript solution to load, parse and display VAST resources (advertising)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/radiantmediaplayer/rmp-vast.git"
+    "url": "git+https://github.com/pavloniym/rmp-vast.git"
+  },
+  "exports": {
+    "import": "./dist/rmp-vast.esm.js",
+    "require": "./dist/rmp-vast.js"
   },
   "main": "./dist/rmp-vast.js",
+  "module": "./dist/rmp-vast.esm.js",
   "types": "./types/js/index.d.ts",
   "scripts": {
     "test": "node ./test/run.mjs desktop",
@@ -15,12 +20,14 @@
     "test:android": "node ./test/run.mjs android",
     "test:safari": "node ./test/run.mjs safari",
     "webpackbuild": "webpack --config webpack.production.config.js",
+    "webpackbuild:esm": "webpack --config webpack.production.config.js && webpack --config webpack.esm.config.js",
     "dev": "webpack serve --config webpack.dev.config.js --hot",
     "lint:browser": "npx eslint ./src/ ./test/ ./app/ ./eslint.config*",
     "lint:node": "npx eslint --config eslint.config.node.mjs ./test/spec/main/ ./test/spec/helpers/ ./test/*.mjs ./webpack.*",
     "lint": "npm run lint:browser && npm run lint:node",
     "types": "npx -p typescript tsc",
-    "build": "npm run lint && npm run webpackbuild && npm run types"
+    "build": "npm run lint && npm run webpackbuild && npm run types",
+    "build:esm": "npm run lint && npm run webpackbuild:esm && npm run types"
   },
   "keywords": [
     "vast",
