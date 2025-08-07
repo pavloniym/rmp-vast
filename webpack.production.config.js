@@ -25,9 +25,6 @@ module.exports = {
     'rmp-vast.min': [
       './src/js/index.js'
     ],
-    'rmp-vast.esm': [
-      './src/js/index.js'
-    ]
   },
   output: {
     library: {

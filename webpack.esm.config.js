@@ -46,5 +46,9 @@ module.exports = {
     new webpack.DefinePlugin({
       RMP_VAST_VERSION: JSON.stringify(PACKAGE.version)
     })
-  ]
+  ],
+  optimization: {
+    splitChunks: false,
+    runtimeChunk: false,
+  }
 };

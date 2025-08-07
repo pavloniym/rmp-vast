@@ -84,6 +84,7 @@
   outline: none;
   display: block;
   cursor: pointer;
+  pointer-events: none;
 }
 
 .rmp-ad-container-icons {

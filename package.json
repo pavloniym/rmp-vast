@@ -1,6 +1,6 @@
 {
   "name": "@pavloniym/rmp-vast",
-  "version": "17.0.1-esm-v2",
+  "version": "17.0.1-esm-v3",
   "author": "Radiant Media Player <support@radiantmediaplayer.com>",
   "description": "A client-side JavaScript solution to load, parse and display VAST resources (advertising)",
   "publishConfig": {
@@ -27,7 +27,7 @@
     "test:android": "node ./test/run.mjs android",
     "test:safari": "node ./test/run.mjs safari",
     "webpackbuild": "webpack --config webpack.production.config.js",
-    "webpackbuild:esm": "webpack --config webpack.production.config.js && webpack --config webpack.esm.config.js",
+    "webpackbuild:esm": "webpack --config webpack.esm.config.js",
     "dev": "webpack serve --config webpack.dev.config.js --hot",
     "lint:browser": "npx eslint ./src/ ./test/ ./app/ ./eslint.config*",
     "lint:node": "npx eslint --config eslint.config.node.mjs ./test/spec/main/ ./test/spec/helpers/ ./test/*.mjs ./webpack.*",

@@ -636,7 +636,7 @@ export default class VpaidPlayer {
     };
 
     this.#vpaidIframe.src = src;
-    this.#adContainer.appendChild(this.#vpaidIframe);
+    this.#adContainer.prepend(this.#vpaidIframe);
   }
 
   destroy() {
